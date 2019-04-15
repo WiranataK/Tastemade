@@ -12,18 +12,18 @@
     <title>TasteMade | Resep & Video</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="img/logo.png" id="logo"></a>
+  <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
+        <a href="<?php echo base_url() ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
             <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Makanan</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/halamanmakanan') ?>">Makanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="//codeply.com">TV</a>
+                    <a class="nav-link" href="#">TV</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -37,7 +37,7 @@
         </div>
     </nav>
     <header>
-      <img class="img-fluid" src="img/headermakanan.png">
+      <img class="img-fluid" src="<?php echo base_url('img/headermakanan.png') ?>" style="margin-top : 70px; width : 100%; height : 190px ">
     </header>
       <div class="container">
         <!--1 vide-->

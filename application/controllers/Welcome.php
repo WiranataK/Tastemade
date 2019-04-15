@@ -25,8 +25,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('halaman_utama');
 	}
 
-	public function resep()
+	public function halamanmakanan()
 	{
-		$this->load->view('resep');
+		$this->load->view('halaman_makanan');
 	}
 }
