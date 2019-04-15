@@ -65,11 +65,69 @@
              </div>
       <!-- Content here -->
       </div>
-      <footer>  
-          <div class="container">
-            <div rp></div>
+</div>
+      <!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4" style="background-color : #262626; width : 100%">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h2 class="text-uppercase" style=" margin-left : 250px"> <a style="color : white; text-decoration : none" href="<?php echo base_url() ?>"> TASTEMADE </a></h2>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Tentang</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Periklanan</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Pers</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Karier</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Kirimkan Ide</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Tanya Jawab Umum</a>
+              </li>  
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">US</a>
+              </li>                          
+            </ul>
           </div>
-      </footer>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">UK</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Portugues</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Espanol</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">日本語</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Bahasa</a>
+              </li>
+              <li>
+                <a style="color : white; text-decoration : none"  href="#!">Français</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3" style="color : white">©2019 Copyright:
+      <a>Inc • Syarat • Privasi • • Moderasi Media Sosial • Copyright</a>
+    </div>
+  </footer>
+  <!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

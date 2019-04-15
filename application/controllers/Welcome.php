@@ -29,4 +29,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('halaman_makanan');
 	}
+
+	public function resep()
+	{
+		$this->load->view('resep');
+	}
 }

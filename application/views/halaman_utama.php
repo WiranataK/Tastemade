@@ -36,14 +36,14 @@
             </ul>
         </div>
     </nav>
-      <div class="container">
+      <div class="container" style="padding-top : 100px">
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <h2> Hari ini di Tastemade</h2>
             <h4> Resep dan Video </h4>
               <div class="videohome"> 
-                elemen video
-                <h2>Nasi Goreng Hitam</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep') ?>"> Nasi Goreng Hitam </a> </h2>
                 <p>Gurihnya nasi goreng dengan rasa tinta cumi yang khas dengan campuran seafood yang menggoda!</p>
               </div>
               <div class="videohome"> 

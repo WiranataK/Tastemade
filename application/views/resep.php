@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="img/logo.png" id="logo"></a>
+        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,6 +38,7 @@
     </nav>
       <div class="container">
         <!--1 video-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!--2 kolom 2 biji-->
         <div class="row">
             </div>
@@ -55,7 +56,7 @@
                    <div class="col-12 items2">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Bakso Goreng Ayam
@@ -65,7 +66,7 @@
                  <div class="col-12 items2">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Bakso Goreng Ayam
@@ -75,7 +76,7 @@
                  <div class="col-12 items2">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Bakso Goreng Ayam
@@ -85,7 +86,7 @@
                  <div class="col-12 items2">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Bakso Goreng Ayam
@@ -160,10 +161,10 @@
                     </ol>
                   </div>
               </div>
-              <div style="background: url('img/yellow-ca4b8145f2.png')">
+              <div style="background: url(<?php echo base_url('img/yellow-ca4b8145f2.png') ?>">
                 <div class="row no-gutter">
                 <div class="col-2">
-                  <img id="phone" class="img-fluid" src="img/phone-f7a6d1ccb0.png">
+                  <img id="phone" class="img-fluid" src="<?php echo base_url("img/phone-f7a6d1ccb0.png") ?>">
                 </div>
                 <div class="col-10 text1">
                   <h3>Dapatkan Aplikasi Tastemade</h3>
