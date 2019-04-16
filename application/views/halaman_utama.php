@@ -110,7 +110,6 @@
     </div>
   </div>
 <!-- Footer -->
-wiraa
 <footer class="page-footer font-small special-color-dark pt-4" style="background-color : #262626; width : 100%">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
