@@ -23,7 +23,7 @@
                     <a class="nav-link" href="<?php echo site_url('Welcome/halamanmakanan') ?>">Makanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TV</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/tv') ?>">TV</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">

@@ -34,4 +34,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('resep');
 	}
+	public function tv()
+	{
+		$this->load->view('tv');
+	}
 }
