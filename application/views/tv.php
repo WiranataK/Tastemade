@@ -39,7 +39,7 @@
 <div class="headertv">
       <h1 class="it">Introducing Tastemade TV</h1>
       <p class="captiontv">Tastemade's 24/7 live streaming channel featuring brand-new original shows and your favorite Tastemade talent.</p>
-      <button type="button" class="btn btn-outline-danger btn-lg">DAPATKAN SATU MINGGU GRATIS</button>
+      <button type="button" class="btn btn-danger btn-lg">DAPATKAN SATU MINGGU GRATIS</button>
       <button type="button" class="btn btn-outline-light btn-lg">WATCH NOW</button>
       <div class="vp">
         <p>View Plans</p>
@@ -53,6 +53,87 @@
 <div class="ScrollableContent">
   <div class="ScrollableContent1"></div>
   <div class="ScrollableContent2"></div>
+</div>
+<div class="banner2">
+  <div class="contentbanner2">
+    <H1 class="WOADT">Watch On Any Device</H1>
+    <P class="Enjoy">Enjoy our newest original shows on all your devices - TV, phone, tablet, and web.</P>
+    <button type="button" class="btn btn-outline-dark btn-lg">DAPATKAN 1 MINGGU GRATIS</button>
+  </div>
+</div>
+<div class="banner3">
+  <div class="contentbanner3">
+    <h1 class="NSEW">New shows every week</h1>
+    <p class="Captbanner3">Tune in daily for the latest episode of your favorite shows and talent. Couldn't catch it live? Don't worry - all shows are available on demand.</p>
+    <button type="button" class="btn btn-danger btn-lg">DAPATKAN 1 MINGGU GRATIS</button>
+  </div>
+</div>
+<div class="MarketingPage">
+  <div class="MarketingHeader">
+    <h2 class="PPA">Pilih Paket Anda</h2>
+    <p class="Captmarketing">Semua paket memiliki percobaan gratis satu minggu. Ganti atau batalkan paket kapan saja.</p>
+  </div>
+  <div class="SubscriptionPlans">
+    <div class="featurelist">
+      <div class="Item">
+        <div class="CheckContainer">
+          <div class="CheckMark"></div>
+        </div>
+        <p class="TextContainer">
+          <span>24/7 saluran streaming langsung</span>
+        </p>
+      </div>
+      <div class="Item">
+        <div class="CheckContainer">
+          <div class="CheckMark"></div>
+        </div>
+        <p class="TextContainer">
+          <span>Tonton di semua perangkat anda.</span>
+        </p>
+      </div>
+      <div class="Item">
+        <div class="CheckContainer">
+          <div class="CheckMark"></div>
+        </div>
+        <p class="TextContainer">
+          <span>Petunjuk dan Celana pendek asli</span>
+        </p>
+      </div>
+      <div class="Item">
+        <div class="CheckContainer">
+          <div class="CheckMark"></div>
+        </div>
+        <p class="TextContainer">
+          <span>Batal kapan saja</span>
+        </p>
+      </div>
+    </div>  
+    <div class="PlansContainer">
+      <div class="PlanContainerGrid">
+        <a href="/auth/subscribe?plan=Plus" class="SubscriptionPlan__BoxContent-sc-1ub5b0h-1 gRwmvV">
+          <div class="SubscriptionPlan__BoxTitle-sc-1ub5b0h-4 QMWsK">
+            <span>Plus Monthly</span>
+          </div>
+          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 khxnfk">
+            <span> <span>US$7,99</span> / bulan</span>
+          </div>
+          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 gGZClt">
+          </div>
+        </a>
+      </div>
+      <div class="SubscriptionPlan__PlanContainerGrid-sc-1ub5b0h-2 cVwUcu">
+        <a href="/auth/subscribe?plan=Plus Annual" class="SubscriptionPlan__BoxContent-sc-1ub5b0h-1 gRwmvV">
+          <div class="SubscriptionPlan__BoxTitle-sc-1ub5b0h-4 QMWsK">
+            <span>Plus Annual</span>
+          </div>
+          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 jTrmGc">
+            <span><span>US$49,99</span> / tahun</span>
+          </div>
+          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 gGZClt"></div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4" style="background-color : #262626; width : 100%">
