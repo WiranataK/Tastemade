@@ -36,91 +36,24 @@
             </ul>
         </div>
     </nav>
-<header class="headertv">
+<div class="headertv">
       <h1 class="it">Introducing Tastemade TV</h1>
-      <p>Tastemade's 24/7 live streaming channel featuring brand-new original shows and your favorite Tastemade talent.</p>
+      <p class="captiontv">Tastemade's 24/7 live streaming channel featuring brand-new original shows and your favorite Tastemade talent.</p>
       <button type="button" class="btn btn-outline-danger btn-lg">DAPATKAN SATU MINGGU GRATIS</button>
       <button type="button" class="btn btn-outline-light btn-lg">WATCH NOW</button>
-      <P class="vp">VIEW PLAN</P>
-      <img src='<?= base_url(). "img/lingkaran.png"?>'>
-</header>
-<div class="SCROLLBAR">
+      <div class="vp">
+        <p>View Plans</p>
+        <img src="https://www-tastemade-com.akamaized.net/dist/images/icons/chevron-circled-91f929f8b8.png">
+      </div>
+</div>
+<div class="scrolbartv">
   <div class="HOH">Hundreds of Hours</div>
   <div class="BNOT">Of brand new original Tastemade shows</div>
 </div>
-      <div class="container" style="padding-top : 100px">
-        <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <h2> Hari ini di Tastemade</h2>
-            <h4> Resep dan Video </h4>
-              <div class="videohome"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep') ?>"> Nasi Goreng Hitam </a> </h2>
-                <p>Gurihnya nasi goreng dengan rasa tinta cumi yang khas dengan campuran seafood yang menggoda!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Es Krim Pisang Goreng</h2>
-                <p>Pisang gorengmu kini dalam bentuk Es Krim yang renyah di luar dan lembut di dalam!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Kepiting Tauco</h2>
-                <p>Lembutnya daging kepiting dalam balutan bumbu tauco yang gurih!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Tengkleng Bakar</h2>
-                <p>LNikmati kelembutan Tengkleng yang dibakar dengan kuah gulai yang bercita rasa gurih dan sedikit pedas khas Solo ini!</p>
-              </div>
-            </div>
-          <div class="col-md-4 col-sm-12" id="resepsamping">
-            <h2 class="resep">Resep</h2>
-              <div class="row">
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Pertunjukan Pemotongan Tuna di Tokyo
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Nasi Goreng Putih Hongkong
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Puding Karamel Bonbon
-                    </div>
-                  </div>
-                </div>                
-            </div>
-      </div>    
-    </div>
-  </div>
+<div class="ScrollableContent">
+  <div class="ScrollableContent1"></div>
+  <div class="ScrollableContent2"></div>
+</div>
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4" style="background-color : #262626; width : 100%">
     <div class="container-fluid text-center text-md-left">

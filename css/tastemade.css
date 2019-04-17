@@ -8,45 +8,77 @@ nav{
 	background-color: white;
 }
 .it{
-	color: white;
-	margin-top: 20px;
-	font-family: "castellar";
-	font-size: 50px;
+    font-size: 60px;
+    font-family: tiempos;
+    text-align: center;
+    line-height: 48px;
+    padding-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 0px 24px;
+}
+.vp p{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-bottom: 2px;	
+}
+.vp img{
+	width: 42px;
+    height: 42px;
+    animation-name: indicator-bounce;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate
 }
 .vp{
-	margin-top: 110px;
-	margin-bottom: 10px;	
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13px;
+    cursor: pointer;	
+}
+.scrolbartv{
+	text-align: left;
+    display: block;
+    margin: 0px auto;
+    max-width: 100%;
+    padding: 60px;
 }
 .HOH{
 	font-weight: 700;
-    font-size: 44px;
+    font-size: 60px;
     color: rgb(26, 25, 25);
     letter-spacing: 3.75px;
     line-height: 1;
-    padding-left: 25px;
     text-transform: uppercase;
 }
 .BNOT{
-    font-size: 30px;
+    font-size: 36px;
     color: rgb(26, 25, 25);
     letter-spacing: 2.6px;
-    line-height: 1.2;
+    line-height: 48px;
     font-weight: 100;
-    text-transform: uppercase;
-    padding-left: 25px;    
+    text-transform: uppercase;   
 }
-.SCROLLBAR{
-    text-align: left;
-    max-width: 90%;
-    display: block;
-    padding: 60px 0px;
-    margin: 20px 20px;
+.captiontv{
+	letter-spacing: 0.6px;
+    text-align: center;
+    line-height: 1.2;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 0px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0px auto;
+    padding-bottom: 30px;
 }
 .headertv{
 	background: url("../img/tampilantvbesar.jpg");
 	padding: 250px 0;
 	color: white;
 	text-align: center;
+	position: relative;
+	background-repeat: no-repeat;
 }
 #logo{
 	height: auto;
@@ -105,4 +137,53 @@ h5{
 }
 .text1{
 	margin-top: 30px; 
+}
+.ScrollableContent{
+    position: relative;
+}
+.ScrollableContent1{
+	height: 320px;
+    margin-left: -500px;
+}
+.ScrollableContent1::before {
+    animation-name: khEveK;
+}
+.ScrollableContent1::after {
+    animation-name: dLUVMx;
+}
+.ScrollableContent1::before, .ScrollableContent1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 2140px;
+    background-size: 2140px 310px;
+    background-image: url("../img/tvjalan2.jpg");
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+.ScrollableContent2{
+	height: 320px;
+    margin-left: -714px;
+}
+.ScrollableContent2::before {
+    animation-name: dnkfNh;
+}
+.ScrollableContent2::after {
+    animation-name: dLUVMx;
+}
+.ScrollableContent2::before, .ScrollableContent2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 2140px;
+    background-size: 2140px 310px;
+    background-image: url("../img/tvjalan1.jpg");
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
 }
