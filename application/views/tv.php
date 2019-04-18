@@ -28,11 +28,14 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Masuk</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/masuk') ?>">Masuk</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Buat Akun</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/BuatAkun') ?>">Buat Akun</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo site_url('Welcome/searching') ?>">Cari</a>
+                </li>                 
             </ul>
         </div>
     </nav>
@@ -108,30 +111,33 @@
         </p>
       </div>
     </div>  
-    <div class="PlansContainer">
-      <div class="PlanContainerGrid">
-        <a href="/auth/subscribe?plan=Plus" class="SubscriptionPlan__BoxContent-sc-1ub5b0h-1 gRwmvV">
-          <div class="SubscriptionPlan__BoxTitle-sc-1ub5b0h-4 QMWsK">
+    <div class="PC">
+      <div class="PCG">
+        <!-- isi dengan link buat akun/login di bagian href -->
+        <a href="" class="BC">
+          <div class="BT">
             <span>Plus Monthly</span>
           </div>
-          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 khxnfk">
-            <span> <span>US$7,99</span> / bulan</span>
+          <div class="Sec">
+            <span>US$7,99/bulan</span>
           </div>
-          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 gGZClt">
-          </div>
+          <div class="space"></div>
+          <button type="button" class="btn btn-danger btn-lg">DAPATKAN SATU MINGGU GRATIS</button>
         </a>
       </div>
-      <div class="SubscriptionPlan__PlanContainerGrid-sc-1ub5b0h-2 cVwUcu">
-        <a href="/auth/subscribe?plan=Plus Annual" class="SubscriptionPlan__BoxContent-sc-1ub5b0h-1 gRwmvV">
-          <div class="SubscriptionPlan__BoxTitle-sc-1ub5b0h-4 QMWsK">
-            <span>Plus Annual</span>
+      <div class="PCG">
+        <!-- isi dengan link buat akun/login di bagian href -->
+        <a href="" class="BC">
+          <div class="BT">
+            <span>Plus Monthly</span>
           </div>
-          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 jTrmGc">
-            <span><span>US$49,99</span> / tahun</span>
+          <div class="Sec">
+            <span>US$7,99/bulan</span>
           </div>
-          <div class="SubscriptionPlan__Secondary-sc-1ub5b0h-5 gGZClt"></div>
+          <div class="space"></div>
+          <button type="button" class="btn btn-danger btn-lg">DAPATKAN SATU MINGGU GRATIS</button>
         </a>
-      </div>
+      </div>     
     </div>
   </div>
 </div>

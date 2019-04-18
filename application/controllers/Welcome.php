@@ -38,4 +38,17 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('tv');
 	}
+	public function masuk()
+	{
+		$this->load->view('masuk');
+	}
+	public function BuatAkun()
+	{
+		$this->load->view('BuatAkun');
+	}
+	public function searching()
+	{
+		$this->load->view('searching');
+	}
 }
+

@@ -28,11 +28,14 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Masuk</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/masuk') ?>">Masuk</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Buat Akun</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/BuatAkun') ?>">Buat Akun</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo site_url('Welcome/searching') ?>">Cari</a>
+                </li>                 
             </ul>
         </div>
     </nav>

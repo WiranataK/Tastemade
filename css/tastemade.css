@@ -262,6 +262,7 @@ h5{
 .MarketingPage{
 	padding-top: 80px;
     padding-bottom: 40px;
+    background-color: #FAFAFA;
 
 }
 .MarketingHeader{
@@ -281,10 +282,6 @@ h5{
 }
 .Captmarketing{
 	display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     margin:0px;
     text-align: center;
     font-size: 19px;
@@ -335,4 +332,230 @@ h5{
     line-height: 18px;
     margin: 0px;
     display: block;
+}
+.PC{
+	display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.PCG{
+    position: relative;
+    margin-bottom: 30px;
+    flex-basis: 50%;
+}
+.BC{
+    display: block;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 22px 0px;
+    padding: 12%;
+    margin: 0px 10px;
+    border-radius: 4px;
+    transition: transform 200ms ease 0s;
+}
+a, a:hover, a:focus {
+    color: rgb(38, 38, 38);
+    -webkit-tap-highlight-color: rgba(153, 153, 153, 0.8);
+    text-decoration: none;
+}
+.BT{
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2.4px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.Sec{
+	color: rgb(77, 202, 150);
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    height: auto;
+}
+.space{
+	height: 30px;
+}
+
+.BaseLayout {
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1060px;
+    z-index: 2;
+}
+.Layoutlogin{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 60px 20px;
+    flex-flow: column;
+}
+.LayoutBox{
+	max-width: 400px;
+}
+.BA{
+	margin-bottom: 15px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+    font-family: Tiempos;
+    text-transform: none;
+    font-weight: 500;
+    margin: 0px;
+    display: block;
+    font-size: 2em;
+}
+.LayoutContent{
+	background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-image: initial;
+    padding: 30px;
+    border-radius: 10px;
+}
+.BaseLabel{
+	color: rgb(38, 38, 38);
+    cursor: pointer;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+.BaseInput{
+    box-shadow: none;
+    display: block;
+    background-color: rgb(247, 247, 247);
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    padding: 12px 15px;
+}
+input{
+	overflow: visible;
+	line-height: 1.15;
+    margin: 0px;
+    font-family: inherit;
+}
+.RegisterForm{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 13px 0px;
+}
+[type="checkbox"]{
+    box-sizing: border-box;
+    padding: 0px;
+    -webkit-appearance: checkbox;
+    background-color: initial;
+    cursor: default;
+    border: initial;
+}
+.RegisterFormCapt{
+	text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+    color: rgb(135, 135, 135);
+    letter-spacing: 0.2px;
+    display: block;
+    margin: 0px;
+}
+.LoginConfirm{
+	margin-top: 24px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    margin: 0px;
+}
+.LoginConfirm a, .LoginConfirm a:hover, .LoginConfirm a:focus {
+    color: rgb(62, 125, 255);
+}
+.ForgetPassword{
+	font-size: 14px;
+    text-align: right;
+    margin: 2px 0px 10px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+}
+.ForgetPassword a {
+    color: rgb(36, 69, 218);
+}
+.LoginFormWarning{
+    background-color: rgb(255, 237, 222);
+    color: rgb(242, 48, 30);
+    margin-top: 20px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 80, 44);
+    border-image: initial;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    margin: 10px;
+    display: block;
+}
+.SearchMenu {
+    width: 100vw;
+    background-color: rgb(38, 38, 38);
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 64px;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.SearchMenuContainer {
+    max-width: 1060px;
+    min-height: 400px;
+    margin: 0px auto;
+    padding: 60px 30px;
+}
+.SearchBarContainer {
+    position: relative;
+    display: block;
+    margin-top: 0em;
+}
+.SearchBar{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    margin: 6px 5px 0px;
+}
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+:not(svg), :not(foreignObject) > svg {
+    transform-origin: 0px 0px;
+}
+.SearchInput{
+	border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 26px;
+    background: transparent;
+    border-style: none none solid;
+    border-image: initial;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    padding: 10px 20px 10px 50px;
 }

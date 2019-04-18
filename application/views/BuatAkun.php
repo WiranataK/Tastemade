@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/tastemade.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo base_url() . 'css/tastemade.css'?>" rel="stylesheet" type="text/css"/>
 
-    <title>TasteMade | Resep & Video</title>
+<title>TasteMade | Resep & Video</title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
@@ -35,83 +35,48 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo site_url('Welcome/searching') ?>">Cari</a>
-                </li>                
+                </li>                 
             </ul>
         </div>
     </nav>
-      <div class="container" style="padding-top : 100px">
-        <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <h2> Hari ini di Tastemade</h2>
-            <h4> Resep dan Video </h4>
-              <div class="videohome"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep') ?>"> Nasi Goreng Hitam </a> </h2>
-                <p>Gurihnya nasi goreng dengan rasa tinta cumi yang khas dengan campuran seafood yang menggoda!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Es Krim Pisang Goreng</h2>
-                <p>Pisang gorengmu kini dalam bentuk Es Krim yang renyah di luar dan lembut di dalam!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Kepiting Tauco</h2>
-                <p>Lembutnya daging kepiting dalam balutan bumbu tauco yang gurih!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Tengkleng Bakar</h2>
-                <p>LNikmati kelembutan Tengkleng yang dibakar dengan kuah gulai yang bercita rasa gurih dan sedikit pedas khas Solo ini!</p>
-              </div>
-            </div>
-          <div class="col-md-4 col-sm-12" id="resepsamping">
-            <h2 class="resep">Resep</h2>
-              <div class="row">
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Pertunjukan Pemotongan Tuna di Tokyo
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Nasi Goreng Putih Hongkong
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Puding Karamel Bonbon
-                    </div>
-                  </div>
-                </div>                
-            </div>
-      </div>    
-    </div>
-  </div>
+<div class="BaseLayout">
+  <div class="Layoutlogin">
+    <div class="LayoutBox">
+      <h1 class="BA">
+        <span>Buat akunmu</span>
+      </h1>
+      <div class="LayoutContent">
+        <form action="/auth/register" method="post">
+          <label class="BaseLabel">
+            <span>Surel</span>
+          </label>
+          <input type="email" required="" id="email" name="email" class="BaseInput" value="">
+          <label class="BaseLabel">
+            <span>Kata sandi</span>
+          </label>
+          <input type="password" id="password" name="password" required="" autocomplete="off" autocorrect="off" autocapitalize="off" class="BaseInput">
+          <div class="RegisterForm">
+            <input type="checkbox" style="margin-right:10px" id="signup_content" name="signup_content">
+            <label for="signup_content" class="BaseLabel">
+              <span>Dapatkan pembaruan berita &amp; pada acara, resep baru yang menarik dan lebih banyak</span>
+            </label>
+          </div>
+          <input type="hidden" class="BaseInput">
+          <button type="button" class="btn btn-warning btn-lg">BUAT AKUN</button>
+          <p class="RegisterFormCapt">
+            <span>Dengan mendaftar, Anda menyetujui <b>Ketentuan Penggunaan</b> dan <b>Kebijakan Privasi</b> Tastemade.</span>
+          </p>
+        </form>
+      </div>
+            <p class="LoginConfirm">
+              <span>Sudah memiliki sebuah akun</span>?&nbsp;
+              <a href="#">
+                <span>Masuk</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4" style="background-color : #262626; width : 100%">
     <div class="container-fluid text-center text-md-left">
