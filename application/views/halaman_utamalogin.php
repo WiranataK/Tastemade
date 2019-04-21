@@ -12,7 +12,7 @@
     <title>TasteMade | Resep & Video</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
+  <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
         <a href="<?php echo base_url() ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
@@ -28,11 +28,29 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/masuk') ?>">Masuk</a>
+                  <li class="nav-link">
+                    <div class="bs-example">
+                       <div class="dropdown">
+                            <a style="color : black; text-decoration : none"href="#" data-toggle="dropdown" class="dropdown-toggle">Profile<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> AKUN SAYA</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> VIDEO TERSIMPAN</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> MEMBANTU</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> KELUAR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/BuatAkun') ?>">Buat Akun</a>
-                </li>
+                    <a class="nav-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>                                            
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo site_url('Welcome/searching') ?>">Cari</a>
                 </li>                
@@ -71,7 +89,7 @@
                 <div class="col-12 items">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Bakso Goreng Ayam
@@ -81,7 +99,7 @@
                 <div class="col-12 items">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Pertunjukan Pemotongan Tuna di Tokyo
@@ -91,7 +109,7 @@
                 <div class="col-12 items">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Nasi Goreng Putih Hongkong
@@ -101,7 +119,7 @@
                 <div class="col-12 items">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
+                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
                     </div>
                     <div class="col-6 align-self-center">
                       Puding Karamel Bonbon

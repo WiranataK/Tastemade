@@ -50,5 +50,33 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('searching');
 	}
+	public function halaman_utamalogin()
+	{
+		$this->load->view('halaman_utamalogin');
+	}
+	public function halaman_makananlogin()
+	{
+		$this->load->view('halaman_makananlogin');
+	}
+	public function reseplogin()
+	{
+		$this->load->view('reseplogin');
+	}
+	public function tvlogin()
+	{
+		$this->load->view('tvlogin');
+	}
+	public function akunsaya2()
+	{
+		$this->load->view('akunsaya2');
+	}
+	public function akunsaya()
+	{
+		$this->load->view('akunsaya');
+	}
+	public function akunku()
+	{
+		$this->load->view('akunku');
+	}
 }
 

@@ -12,7 +12,7 @@
     <title>TasteMade | Resep & Video</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
+  <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
         <a href="<?php echo base_url() ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
@@ -28,91 +28,66 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/masuk') ?>">Masuk</a>
+                  <li class="nav-link">
+                    <div class="bs-example">
+                       <div class="dropdown">
+                            <a style="color : black; text-decoration : none"href="#" data-toggle="dropdown" class="dropdown-toggle">Profile<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> AKUN SAYA</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> VIDEO TERSIMPAN</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> MEMBANTU</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> KELUAR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/BuatAkun') ?>">Buat Akun</a>
-                </li>
+                    <a class="nav-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li> 
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo site_url('Welcome/searching') ?>">Cari</a>
-                </li>                
+                </li>                 
             </ul>
         </div>
     </nav>
-      <div class="container" style="padding-top : 100px">
+    <header>
+      <img class="img-fluid" src="<?php echo base_url('img/headermakanan.png') ?>" style="margin-top : 70px; width : 100%; height : 190px ">
+    </header>
+      <div class="container">
+        <!--1 vide-->
+        <!--2 kolom 2 biji-->
         <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <h2> Hari ini di Tastemade</h2>
-            <h4> Resep dan Video </h4>
-              <div class="videohome"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep') ?>"> Nasi Goreng Hitam </a> </h2>
-                <p>Gurihnya nasi goreng dengan rasa tinta cumi yang khas dengan campuran seafood yang menggoda!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Es Krim Pisang Goreng</h2>
-                <p>Pisang gorengmu kini dalam bentuk Es Krim yang renyah di luar dan lembut di dalam!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Kepiting Tauco</h2>
-                <p>Lembutnya daging kepiting dalam balutan bumbu tauco yang gurih!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Tengkleng Bakar</h2>
-                <p>LNikmati kelembutan Tengkleng yang dibakar dengan kuah gulai yang bercita rasa gurih dan sedikit pedas khas Solo ini!</p>
-              </div>
-            </div>
-          <div class="col-md-4 col-sm-12" id="resepsamping">
-            <h2 class="resep">Resep</h2>
-              <div class="row">
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Pertunjukan Pemotongan Tuna di Tokyo
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Nasi Goreng Putih Hongkong
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="img/resepsamping1.png">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Puding Karamel Bonbon
-                    </div>
-                  </div>
-                </div>                
-            </div>
-      </div>    
-    </div>
-  </div>
-<!-- Footer -->
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+                image
+                nama
+             </div>
+             <div class="col-md-4 col-sm-6 col-xs-12"> 
+                image
+                nama
+             </div>
+             <div class="col-md-4 col-sm-6 col-xs-12"> 
+                image
+                nama
+             </div>
+             <div class="col-md-4 col-sm-6 col-xs-12"> 
+                image
+                nama
+             </div>
+             <div class="col-md-4 col-sm-6 col-xs-12"> 
+                image
+                nama
+             </div>
+      <!-- Content here -->
+      </div>
+</div>
+      <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4" style="background-color : #262626; width : 100%">
     <div class="container-fluid text-center text-md-left">
       <div class="row">

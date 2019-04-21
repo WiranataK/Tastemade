@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="<?php echo base_url() . 'css/tastemade.css'?>" rel="stylesheet" type="text/css"/>
 
     <title>TasteMade | Resep & Video</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
         <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
@@ -27,11 +28,29 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/masuk') ?>">Masuk</a>
+                  <li class="nav-link">
+                    <div class="bs-example">
+                       <div class="dropdown">
+                            <a style="color : black; text-decoration : none"href="#" data-toggle="dropdown" class="dropdown-toggle">Profile<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> AKUN SAYA</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> VIDEO TERSIMPAN</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> MEMBANTU</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> KELUAR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/BuatAkun') ?>">Buat Akun</a>
-                </li>
+                    <a class="nav-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>      
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo site_url('Welcome/searching') ?>">Cari</a>
                 </li>                 
