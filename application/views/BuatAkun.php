@@ -46,7 +46,7 @@
         <span>Buat akunmu</span>
       </h1>
       <div class="LayoutContent">
-        <form action="/auth/register" method="post">
+        <form action="<?php echo site_url("usercontroller/Register"); ?>" method="post">
           <label class="BaseLabel">
             <span>Surel</span>
           </label>
@@ -62,7 +62,7 @@
             </label>
           </div>
           <input type="hidden" class="BaseInput">
-          <button type="button" class="btn btn-warning btn-lg" value="Register">BUAT AKUN</button>
+          <input type="submit" class="btn btn-warning btn-lg" value="BUAT AKUN"></button>
           <p class="RegisterFormCapt">
             <span>Dengan mendaftar, Anda menyetujui <b>Ketentuan Penggunaan</b> dan <b>Kebijakan Privasi</b> Tastemade.</span>
           </p>

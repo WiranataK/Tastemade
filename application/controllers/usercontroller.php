@@ -5,11 +5,9 @@ class UserController extends CI_Controller {
 
 	public function Register()
 	{
-            if($this->User->Register()) {
-                $this->session->set_flashdata('SuccessReg','Success');
+            if($this->user->Register()) {
                 redirect('halaman_utamalogin');
             } else {
-                $this->session->set_flashdata('FailReg', 'Fail');
                 redirect('BuatAkun');
             }
         }
