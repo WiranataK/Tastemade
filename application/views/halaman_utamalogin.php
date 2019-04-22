@@ -33,10 +33,10 @@
                        <div class="dropdown">
                             <a style="color : black; text-decoration : none"href="#" data-toggle="dropdown" class="dropdown-toggle">Profile<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> AKUN SAYA</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="<?php echo site_url('Welcome/akunsaya') ?>"> AKUN SAYA</a></li>
                                 <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> VIDEO TERSIMPAN</a></li>
                                 <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> MEMBANTU</a></li>
-                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> KELUAR</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="<?php echo site_url('usercontroller/Logout') ?>"> KELUAR</a></li>
                             </ul>
                         </div>
                     </div>

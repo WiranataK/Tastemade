@@ -8,7 +8,7 @@ class User extends CI_Model {
             "password" => md5($this->input->post('password'))
         );
 
-        if($this->isExist($data['Email'])) {
+        if($this->isExist($data['email'])) {
             return false;
         } else {
             $this->db->insert('register', $data);
@@ -24,5 +24,21 @@ class User extends CI_Model {
         } else {
             return false;
         }
+    }
+
+    public function findUser() {
+        $data = array(
+            "email" => $this->input->post('email'),
+            "password" => md5($this->input->post('password'))
+        );
+
+        $this->db->where($data);
+        $result = $this->db->get('login');
+        return $result->result_array();
+    }
+
+    public function getcontent(){
+        $query = $this->db->get('timeline');
+        return $query->result();
     }
 }

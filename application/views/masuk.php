@@ -46,7 +46,7 @@
         <span>Masuk</span>
       </h1>
       <div class="LayoutContent">
-        <form action="/auth/register" method="post">
+        <form action="halaman_utamalogin" method="post">
           <label class="BaseLabel">
             <span>Surel</span>
           </label>
@@ -59,7 +59,7 @@
             <span>Lupa Kata Sandi</span>?</a>
           </p>
           <input type="hidden" class="BaseInput">
-          <button type="button" class="btn btn-warning btn-lg">BUAT AKUN</button>
+          <input type="submit" class="btn btn-warning btn-lg" value="MASUK"></button>
           <p class="LoginFormWarning">
             <span>Jika Anda memiliki akun yang dibuat dengan Facebook, kunjungi <a href="#">halaman pengaturan ulang kata sandi</a> dan gunakan alamat email yang terkait dengan akun Facebook Anda untuk mengatur ulang kata sandi.
             </span>
