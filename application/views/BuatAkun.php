@@ -62,7 +62,7 @@
             </label>
           </div>
           <input type="hidden" class="BaseInput">
-          <button type="button" class="btn btn-warning btn-lg">BUAT AKUN</button>
+          <button type="button" class="btn btn-warning btn-lg" value="Register">BUAT AKUN</button>
           <p class="RegisterFormCapt">
             <span>Dengan mendaftar, Anda menyetujui <b>Ketentuan Penggunaan</b> dan <b>Kebijakan Privasi</b> Tastemade.</span>
           </p>
@@ -70,7 +70,7 @@
       </div>
             <p class="LoginConfirm">
               <span>Sudah memiliki sebuah akun</span>?&nbsp;
-              <a href="#">
+              <a href="<?php echo site_url('Welcome/masuk') ?>">
                 <span>Masuk</span>
               </a>
             </p>
