@@ -62,26 +62,13 @@
           <div class="col-md-8 col-sm-12">
             <h2> Hari ini di Tastemade</h2>
             <h4> Resep dan Video </h4>
+            <?php foreach ($data as $d) {?>
               <div class="videohome"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep') ?>"> Nasi Goreng Hitam </a> </h2>
-                <p>Gurihnya nasi goreng dengan rasa tinta cumi yang khas dengan campuran seafood yang menggoda!</p>
+              <iframe width="560" height="315" src="<?php echo $d->src ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url($d->href) ?>"> <?php echo $d->namamakanan ?> </a> </h2>
+                <p><?php echo $d->deskripsi ?></p>
               </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Es Krim Pisang Goreng</h2>
-                <p>Pisang gorengmu kini dalam bentuk Es Krim yang renyah di luar dan lembut di dalam!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Kepiting Tauco</h2>
-                <p>Lembutnya daging kepiting dalam balutan bumbu tauco yang gurih!</p>
-              </div>
-              <div class="videohome"> 
-                elemen video
-                <h2>Tengkleng Bakar</h2>
-                <p>LNikmati kelembutan Tengkleng yang dibakar dengan kuah gulai yang bercita rasa gurih dan sedikit pedas khas Solo ini!</p>
-              </div>
+              <?php }?>
             </div>
           <div class="col-md-4 col-sm-12" id="resepsamping">
             <h2 class="resep">Resep</h2>
