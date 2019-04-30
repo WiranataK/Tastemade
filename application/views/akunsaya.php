@@ -79,7 +79,7 @@
             <label for="email" class=" u-sr-only">
               <span>Surel</span>
             </label>
-            <input type="email" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="email" name="email" value="nindamhrn@gmail.com">
+            <input type="email" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="email" name="email" value="<?php echo $data[0]['email'] ?>">
             <button type="submit" id="profile-save" class="Button-sc-1bt8qxf-0 TextButton-sc-1g53exa-0 cOoPS">
               <span><span>Perbarui</span></span>
             </button>
@@ -94,7 +94,7 @@
             <label for="password" class=" u-sr-only">
               <span>Kata Sandi Baru</span>
             </label>
-            <input type="password" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="password" name="password" value="">
+            <input type="password" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="password" name="password" value="<?php echo $data[0]['password'] ?>">
             <div class="form-actions right">
               <button type="submit" id="password-save" class="Button-sc-1bt8qxf-0 TextButton-sc-1g53exa-0 cOoPS">
                 <span><span>Perbarui</span></span>

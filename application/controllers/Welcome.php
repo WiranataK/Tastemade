@@ -21,19 +21,20 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		parent::__construct();
 		$datacontent = $this->user->getcontent();
 		$this->load->view('halaman_utama', ['data' => $datacontent]);
 	}
 
 	public function halamanmakanan()
 	{
-		$this->load->view('halaman_makanan');
+		$datamakanan = $this->user->getmakanan();
+		$this->load->view('halaman_makanan', ['data' => $datamakanan]);
 	}
 
-	public function resep()
+	public function resep($id)
 	{
-		$this->load->view('resep');
+		$datamakanan = $this->user->getresep($id);
+		$this->load->view('resep', ['data' => $datamakanan]);
 	}
 
 	public function tv()
@@ -58,7 +59,8 @@ class Welcome extends CI_Controller {
 
 	public function halaman_utamalogin()
 	{
-		$this->load->view('halaman_utamalogin');
+		$datacontent = $this->user->getcontent();
+		$this->load->view('halaman_utamalogin', ['data' => $datacontent]);
 	}
 
 	public function halaman_makananlogin()
@@ -78,7 +80,8 @@ class Welcome extends CI_Controller {
 
 	public function akunsaya()
 	{
-		$this->load->view('akunsaya');
+		$datauser = $this->user->getuser($_SESSION['logged']);
+		$this->load->view('akunsaya', ['data' => $datauser]);
 	}
 }
 

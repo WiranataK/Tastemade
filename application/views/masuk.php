@@ -46,7 +46,7 @@
         <span>Masuk</span>
       </h1>
       <div class="LayoutContent">
-        <form action="halaman_utamalogin" method="post">
+        <form action="<?php echo site_url("usercontroller/Signin") ?>" method="post">
           <label class="BaseLabel">
             <span>Surel</span>
           </label>

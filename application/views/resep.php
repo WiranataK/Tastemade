@@ -106,51 +106,8 @@
               </div>
               <div>
                 <h5>BAHAN</h5>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>
-                <div class="col-6">
-                  bla bla
-                </div>                                                
-              </div>
+                <?php echo $data[0]->bahan ?>
+              </div>                                               
               <div>
                 <h5 class="INTRUKSI">INTRUKSI</h5>
               </div>

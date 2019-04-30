@@ -33,12 +33,37 @@ class User extends CI_Model {
         );
 
         $this->db->where($data);
-        $result = $this->db->get('login');
+        $result = $this->db->get('register');
         return $result->result_array();
     }
 
     public function getcontent(){
         $query = $this->db->get('timeline');
         return $query->result();
+    }
+
+    public function getuser($email){
+        $this->db->where("email",$email);
+        $result = $this->db->get('register')->result_array();
+        if(isset($result[0])) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
+    public function getmakanan(){
+        $query = $this->db->get('resep');
+        return $query->result();
+    }
+
+    public function getresep($id){
+        $this->db->where("id",$id);
+        $result = $this->db->get('resep')->result();
+        if(isset($result[0])) {
+            return $result;
+        } else {
+            return false;
+        }
     }
 }

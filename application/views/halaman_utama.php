@@ -47,7 +47,7 @@
             <?php foreach ($data as $d) {?>
               <div class="videohome"> 
               <iframe width="560" height="315" src="<?php echo $d->src ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url($d->href) ?>"> <?php echo $d->namamakanan ?> </a> </h2>
+                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep/'.$d->id) ?>"> <?php echo $d->namamakanan ?> </a> </h2>
                 <p><?php echo $d->deskripsi ?></p>
               </div>
               <?php }?>

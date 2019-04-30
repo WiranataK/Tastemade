@@ -46,26 +46,17 @@
         <!--1 vide-->
         <!--2 kolom 2 biji-->
         <div class="row">
+        <?php foreach ($data as $d) {?>
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="<?php echo $d->src ?>" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $d->namamakanan ?></h5>  
+                  <p class="card-text"><?php echo $d->deskripsi ?></p>
+                </div>
+            </div>
+            </div>
+            <?php }?>
       <!-- Content here -->
       </div>
 </div>

@@ -15,7 +15,7 @@ class UserController extends CI_Controller {
         public function Signin() {
             $user = $this->user->findUser();
             if($user != null){
-                set_cookie('logged', $user[0]['email'], '3600');
+                $this->session->set_userdata('logged', $user[0]['email'] );
                 redirect('Welcome/halaman_utamalogin');
             } else {
                 redirect('Welcome/masuk');
@@ -23,13 +23,7 @@ class UserController extends CI_Controller {
         }
     
         public function Logout() {
-            $cookie = $this->input->cookie('logged');
-            if(isset($cookie)) {
-                delete_cookie('logged');
-                redirect('Welcome/index');
-            } else {
-                session_destroy();
-                redirect('Welcome/index');
-            }
+            session_destroy();
+            redirect();
         }
     }
