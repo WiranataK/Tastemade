@@ -13,7 +13,7 @@
   </head>
   <body class="bodytv">
     <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="<?php echo base_url() ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
+        <a href="<?php echo site_url('Welcome/halaman_utamalogin') ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>

@@ -65,12 +65,14 @@ class Welcome extends CI_Controller {
 
 	public function halaman_makananlogin()
 	{
-		$this->load->view('halaman_makananlogin');
+		$datamakanan = $this->user->getmakanan();
+		$this->load->view('halaman_makananlogin', ['data' => $datamakanan]);
 	}
 
-	public function reseplogin()
+	public function resep_login($id)
 	{
-		$this->load->view('reseplogin');
+		$datamakanan = $this->user->getresep($id);
+		$this->load->view('reseplogin', ['data' => $datamakanan]);
 	}
 	
 	public function tvlogin()

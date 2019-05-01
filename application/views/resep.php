@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="<?php echo base_url() . 'css/tastemade.css'?>" rel="stylesheet" type="text/css"/>
 
-    <title>TasteMade | Resep & Video</title>
+    <title><?php echo $data[0]->namamakanan ?></title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
+        <a href="<?php echo site_url('Welcome/index') ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +40,7 @@
     </nav>
       <div class="container">
         <!--1 video-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/d3WBeMJY5ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1130" height="430" src="<?php echo $data[0]->src ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!--2 kolom 2 biji-->
         <div class="row">
             </div>
@@ -97,12 +97,9 @@
                 </div>
               </div>
             <div class="col-md-8 col-sm-12">
-              <h2>Bakso Goreng Ayam</h2>
+              <h2><?php echo $data[0]->namamakanan ?></h2>
               <div>
-                Bakso goreng di tempat jajan kesukaanmu kini bisa kamu bikin di rumah! Campur ke nasi goreng atau mie goreng untuk tambahan topping yang lebih nikmat!
-              </div>
-              <div class="porsi">
-                PORSI:
+                <?php echo $data[0]->deskripsi ?>
               </div>
               <div>
                 <h5>BAHAN</h5>
@@ -110,15 +107,7 @@
               </div>                                               
               <div>
                 <h5 class="INTRUKSI">INTRUKSI</h5>
-              </div>
-              <div class="row no-gutter">
-                  <div class="col-12">
-                    <ol>
-                      <li>Kiwi</li>
-                      <li>Apple</li>
-                      <li>Mango</li>
-                    </ol>
-                  </div>
+                <?php echo $data[0]->intruksi ?>
               </div>
               <div style="background: url(<?php echo base_url('img/yellow-ca4b8145f2.png') ?>">
                 <div class="row no-gutter">

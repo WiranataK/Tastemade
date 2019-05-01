@@ -48,13 +48,15 @@
         <div class="row">
         <?php foreach ($data as $d) {?>
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $d->src ?>" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><?php echo $d->namamakanan ?></h5>  
-                  <p class="card-text"><?php echo $d->deskripsi ?></p>
+              <a href="<?php echo site_url('Welcome/resep/'.$d->id) ?>">
+                <div class="card" style="width: 18rem;" >
+                  <img class="card-img-top" src="<?php echo $d->srcimg ?>" alt="Card image cap">
+                    <div class="card-body" >
+                      <h5 class="card-title"><?php echo $d->namamakanan ?></h5>  
+                      <p class="card-text"><?php echo $d->deskripsi ?></p>
+                    </div>
                 </div>
-            </div>
+              </a>
             </div>
             <?php }?>
       <!-- Content here -->

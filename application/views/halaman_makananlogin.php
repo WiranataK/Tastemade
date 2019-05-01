@@ -13,7 +13,7 @@
   </head>
   <body>
   <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="<?php echo base_url('Welcome/halaman_utamalogin') ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
+        <a href="<?php echo site_url('Welcome/halaman_utamalogin') ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,26 +64,19 @@
         <!--1 vide-->
         <!--2 kolom 2 biji-->
         <div class="row">
+        <?php foreach ($data as $d) {?>
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                image
-                nama
-             </div>
+              <a href="<?php echo site_url('Welcome/resep_login/'.$d->id) ?>">
+                <div class="card" style="width: 18rem;" >
+                  <img class="card-img-top" src="<?php echo $d->srcimg ?>" alt="Card image cap">
+                    <div class="card-body" >
+                      <h5 class="card-title"><?php echo $d->namamakanan ?></h5>  
+                      <p class="card-text"><?php echo $d->deskripsi ?></p>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <?php }?>
       <!-- Content here -->
       </div>
 </div>
@@ -92,7 +85,7 @@
     <div class="container-fluid text-center text-md-left">
       <div class="row">
         <div class="col-md-6 mt-md-0 mt-3">
-          <h2 class="text-uppercase" style=" margin-left : 250px"> <a style="color : white; text-decoration : none" href="<?php echo base_url() ?>"> TASTEMADE </a></h2>
+          <h2 class="text-uppercase" style=" margin-left : 250px"> <a style="color : white; text-decoration : none" href="<?php echo site_url('Welcome/halaman_utamalogin') ?>"> TASTEMADE </a></h2>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-3 mb-md-0 mb-3">

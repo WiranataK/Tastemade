@@ -13,17 +13,17 @@
   </head>
   <body>
   <nav class="navbar fixed-top navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="<?php echo base_url() ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
+        <a href="<?php echo site_url('Welcome/halaman_utamalogin') ?>" class="navbar-brand d-flex w-50 mr-auto"><img src="<?php echo base_url("img/logo.png") ?>" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
             <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/halamanmakanan') ?>">Makanan</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/halaman_makananlogin') ?>">Makanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/tv') ?>">TV</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/tvlogin') ?>">TV</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -65,7 +65,7 @@
             <?php foreach ($data as $d) {?>
               <div class="videohome"> 
               <iframe width="560" height="315" src="<?php echo $d->src ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url($d->href) ?>"> <?php echo $d->namamakanan ?> </a> </h2>
+                <h2> <a style="color : black; text-decoration : none" href="<?php echo site_url('Welcome/resep_login/'.$d->id) ?>"> <?php echo $d->namamakanan ?> </a> </h2>
                 <p><?php echo $d->deskripsi ?></p>
               </div>
               <?php }?>
@@ -122,7 +122,7 @@
     <div class="container-fluid text-center text-md-left">
       <div class="row">
         <div class="col-md-6 mt-md-0 mt-3">
-          <h2 class="text-uppercase" style=" margin-left : 250px"> <a style="color : white; text-decoration : none" href="<?php echo base_url() ?>"> TASTEMADE </a></h2>
+          <h2 class="text-uppercase" style=" margin-left : 250px"> <a style="color : white; text-decoration : none" href="<?php echo site_url('Welcome/halaman_utamalogin') ?>"> TASTEMADE </a></h2>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-3 mb-md-0 mb-3">
