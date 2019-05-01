@@ -76,42 +76,14 @@
                   </div>
                    <div class="col-12 items2">
                   <div class="row">
+                  <?php foreach ($data as $d) {?>
                     <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
+                      <img class="img-fluid" src="<?php echo $d->srcimg ?>">
                     </div>
                     <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
+                      <?php echo $d->namamakanan ?>
                     </div>
-                  </div>
-                </div>
-                 <div class="col-12 items2">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
-                    </div>
-                  </div>
-                </div>
-                 <div class="col-12 items2">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
-                    </div>
-                  </div>
-                </div>
-                 <div class="col-12 items2">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png") ?>">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
-                    </div>
+                    <?php }?>
                   </div>
                 </div>
               </div>

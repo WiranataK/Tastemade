@@ -39,7 +39,7 @@ class User extends CI_Model {
     }
 
     public function getcontent(){
-        $query = $this->db->get('timeline');
+        $query = $this->db->get('resep');
         return $query->result();
     }
 
@@ -71,10 +71,15 @@ class User extends CI_Model {
     public function updateemail()
     {
         $data = array(
-            
+            'iduser'  => $this->input->post('iduser'),
             'email'  => $this->input->post('email')
         );
-        $this->db->replace('register', $data);
+        if($this->isExist($data['email'])) {
+            $this->db->replace('register', $data);
+        } else {
+            return false;
+        }
+        #$this->db->replace('register', $data);
     
     }
 

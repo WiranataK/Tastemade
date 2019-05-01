@@ -72,48 +72,23 @@
             </div>
           <div class="col-md-4 col-sm-12" id="resepsamping">
             <h2 class="resep">Resep</h2>
-              <div class="row">
+            <div class="row">
+              <?php foreach ($data as $d) {?>
                 <div class="col-12 items">
+                <a href="<?php echo site_url('Welcome/resep/'.$d->id) ?>">
                   <div class="row">
                     <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
+                      <img class="img-fluid" src="<?php echo $d->srcimg ?>">
                     </div>
                     <div class="col-6 align-self-center">
-                      Bakso Goreng Ayam
+                      <?php echo $d->namamakanan ?>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Pertunjukan Pemotongan Tuna di Tokyo
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Nasi Goreng Putih Hongkong
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 items">
-                  <div class="row">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo base_url("img/resepsamping1.png")?>">
-                    </div>
-                    <div class="col-6 align-self-center">
-                      Puding Karamel Bonbon
-                    </div>
-                  </div>
-                </div>                
-            </div>
+                  </a>
+                </div> 
+                <?php }?>        
+            </div>          
+          </div>
       </div>    
     </div>
   </div>
