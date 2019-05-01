@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Model {
+
     public function Register() {
         $data = array(
             "email" => $this->input->post('email'),
@@ -42,8 +43,8 @@ class User extends CI_Model {
         return $query->result();
     }
 
-    public function getuser($email){
-        $this->db->where("email",$email);
+    public function getuser($iduser){
+        $this->db->where("email",$iduser);
         $result = $this->db->get('register')->result_array();
         if(isset($result[0])) {
             return $result;
@@ -66,4 +67,15 @@ class User extends CI_Model {
             return false;
         }
     }
+
+    public function updateemail()
+    {
+        $data = array(
+            
+            'email'  => $this->input->post('email')
+        );
+        $this->db->replace('register', $data);
+    
+    }
+
 }

@@ -20,10 +20,10 @@
         <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
             <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/halamanmakanan') ?>">Makanan</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/halaman_makananlogin') ?>">Makanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('Welcome/tv') ?>">TV</a>
+                    <a class="nav-link" href="<?php echo site_url('Welcome/tvlogin') ?>">TV</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -33,10 +33,10 @@
                        <div class="dropdown">
                             <a style="color : black; text-decoration : none"href="#" data-toggle="dropdown" class="dropdown-toggle">Profile<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> AKUN SAYA</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="<?php echo site_url('Welcome/akunsaya') ?>"> AKUN SAYA</a></li>
                                 <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> VIDEO TERSIMPAN</a></li>
                                 <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> MEMBANTU</a></li>
-                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="#"> KELUAR</a></li>
+                                <li><a style=" padding-left: 10px; color : black; text-decoration : none"href="<?php echo site_url('usercontroller/Logout') ?>"> KELUAR</a></li>
                             </ul>
                         </div>
                     </div>
@@ -75,17 +75,18 @@
           <h4 style="margin-bottom:10px">
             <span>Surel</span>
           </h4>
-          <form class="clearfix" action="." method="patch" autocomplete="off">
+          <form class="clearfix" action="<?php echo site_url('usercontroller/editemail') ?>" method="patch" autocomplete="off">
             <label for="email" class=" u-sr-only">
               <span>Surel</span>
             </label>
+            <input type="hidden" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="iduser" name="iduser" value="<?php echo $data[0]['iduser'] ?>">
             <input type="email" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="email" name="email" value="<?php echo $data[0]['email'] ?>">
             <button type="submit" id="profile-save" class="Button-sc-1bt8qxf-0 TextButton-sc-1g53exa-0 cOoPS">
               <span><span>Perbarui</span></span>
             </button>
           </form>
         </div>
-        <div>
+        <div> 
           <h4 style="margin-bottom:10px">
             <span>Atur Ulang Kata Sandi
             </span>
@@ -118,11 +119,6 @@
         </div>
       </div>
       <div class="plan-column Grid__Column-sc-1fzylq4-1 zuRPr">
-        <div class="ProfilePage__OutlineBox-sc-1uf5gbj-4 lloeIf">
-          <h4><span>Video Tersimpan</span></h4>
-          <p><span>Anda memiliki <b>2</b> disimpan video! Periksa halaman 'Tersimpan Video' untuk melihat mereka semua!</span></p>
-          <a href="/saved" class="Button-sc-1bt8qxf-0 TextButton-sc-1g53exa-0 cOoPS"><span>Lihat Semua</span></a>
-        </div>
         <div class="ProfilePage__OutlineBox-sc-1uf5gbj-4 lloeIf">
           <h4>
             <span>Dukungan</span>

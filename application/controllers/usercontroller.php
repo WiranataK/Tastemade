@@ -26,4 +26,9 @@ class UserController extends CI_Controller {
             session_destroy();
             redirect();
         }
+
+        public function editemail(){
+            $this->user->updateemail();
+            echo "sukses coy";
+        }
     }
