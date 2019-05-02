@@ -75,7 +75,7 @@
             <div class="row">
               <?php foreach ($data as $d) {?>
                 <div class="col-12 items">
-                <a href="<?php echo site_url('Welcome/resep/'.$d->id) ?>">
+                <a href="<?php echo site_url('Welcome/resep_login/'.$d->id) ?>">
                   <div class="row">
                     <div class="col-4">
                       <img class="img-fluid" src="<?php echo $d->srcimg ?>">
