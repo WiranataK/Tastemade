@@ -75,12 +75,13 @@
           <h4 style="margin-bottom:10px">
             <span>Surel</span>
           </h4>
-          <form class="clearfix" action="<?php echo site_url('usercontroller/editemail') ?>" method="patch" autocomplete="off">
+          <form class="clearfix" action="<?php echo site_url('usercontroller/editemail') ?>" method="post" autocomplete="off">
             <label for="email" class=" u-sr-only">
               <span>Surel</span>
             </label>
-            <input type="hidden" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="iduser" name="iduser" value="<?php echo $data[0]['iduser'] ?>">
-            <input type="email" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="email" name="email" value="<?php echo $data[0]['email'] ?>">
+            <input type="hidden" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="iduser" name="id" value="<?php echo $data[0]['iduser'] ?>">
+            <input type="email" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="email" name="emil" value="<?php echo $data[0]['email'] ?>">
+            <input type="hidden" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="password" name="pw" value="<?php echo $data[0]['password'] ?>">
             <button type="submit" id="profile-save" class="Button-sc-1bt8qxf-0 TextButton-sc-1g53exa-0 cOoPS">
               <span><span>Perbarui</span></span>
             </button>
@@ -91,11 +92,13 @@
             <span>Atur Ulang Kata Sandi
             </span>
           </h4>
-          <form class="clearfix" action="." method="patch" autocomplete="off">
+          <form class="clearfix" action="<?php echo site_url('usercontroller/editemail') ?>" method="post" autocomplete="off">
             <label for="password" class=" u-sr-only">
               <span>Kata Sandi Baru</span>
             </label>
-            <input type="password" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="password" name="password" value="<?php echo $data[0]['password'] ?>">
+            <input type="hidden" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="iduser" name="id" value="<?php echo $data[0]['iduser'] ?>">
+            <input type="hidden" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="email" name="emil" value="<?php echo $data[0]['email'] ?>">
+            <input type="password" class="light Forms__BaseInput-o8xv8b-1 eNDTmO" id="password" name="pw" value="<?php echo $data[0]['password'] ?>">
             <div class="form-actions right">
               <button type="submit" id="password-save" class="Button-sc-1bt8qxf-0 TextButton-sc-1g53exa-0 cOoPS">
                 <span><span>Perbarui</span></span>

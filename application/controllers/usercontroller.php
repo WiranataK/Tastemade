@@ -29,6 +29,11 @@ class UserController extends CI_Controller {
 
         public function editemail(){
             $this->user->updateemail();
-            echo "sukses coy";
+            redirect('Welcome/halaman_utamalogin');
+        }
+
+        public function editpassword(){
+            $this->user->updatepassword();
+            redirect('Welcome/halaman_utamalogin');
         }
     }

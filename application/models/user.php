@@ -6,7 +6,7 @@ class User extends CI_Model {
     public function Register() {
         $data = array(
             "email" => $this->input->post('email'),
-            "password" => md5($this->input->post('password'))
+            "password" => $this->input->post('password')
         );
 
         if($this->isExist($data['email'])) {
@@ -30,7 +30,7 @@ class User extends CI_Model {
     public function findUser() {
         $data = array(
             "email" => $this->input->post('email'),
-            "password" => md5($this->input->post('password'))
+            "password" => $this->input->post('password')
         );
 
         $this->db->where($data);
@@ -71,15 +71,22 @@ class User extends CI_Model {
     public function updateemail()
     {
         $data = array(
-            'iduser'  => $this->input->post('iduser'),
-            'email'  => $this->input->post('email')
+            'iduser'  => $_POST['id'],
+            'email'  => $_POST['emil'],
+            'password' => $_POST['pw']
         );
-        if($this->isExist($data['email'])) {
-            $this->db->replace('register', $data);
-        } else {
-            return false;
-        }
-        #$this->db->replace('register', $data);
+        $this->db->replace('register', $data);
+    
+    }
+
+    public function updatepassword()
+    {
+        $data = array(
+            'iduser'  => $_POST['id'],
+            'email'  => $_POST['emil'],
+            'password' => $_POST['pw']
+        );
+        $this->db->replace('register', $data);
     
     }
 
